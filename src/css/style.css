@@ -1,0 +1,87 @@
+:root {
+    --primary-color: slategray;
+    --background-color:  whitesmoke;
+    --text-color: black;
+    --hover-color: darkslategray;
+    --button-text-color: whitesmoke;
+    --font-size: 1.5rem;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--font-size);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    padding: 4px;
+}
+
+h1,
+h2 {
+    font-size: 2.25rem;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+h2,
+div,
+p {
+  margin-top: 34px;
+  margin-bottom: 34px;  
+}
+
+button {
+    width: 200px;
+    font-size: 1.5rem;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 8px;
+    font-weight: bold;
+    color: var(--button-text-color);
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+.selection-area {
+    display: flex;
+    justify-content: space-around;
+    clear: both; 
+}
+
+.compare-area {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    clear: both; 
+}
+
+#computer-choice-element {
+    transform: scaleX(-1);
+}
+
+img {
+    width: calc(30%);
+}
+
+#rock-image-element,
+#paper-image-element,
+#scissors-image-element,
+#btn-new-round {
+    cursor: pointer;
+}
+
+#result-element,
+#compare-element{
+    display: none;
+}
