@@ -1,3 +1,4 @@
+/* Grundlegende CSS-Variablen für Farbe und Schriftgröße */
 :root {
     --primary-color: slategray;
     --background-color:  whitesmoke;
@@ -7,6 +8,7 @@
     --font-size: 1.5rem;
 }
 
+/* Basis-Styling für den Body */
 body {
     margin: 0px;
     padding: 0px;
@@ -17,6 +19,7 @@ body {
     text-align: center;
 }
 
+/* Container zentrieren und maximale Breite definieren */
 .container {
     max-width: 900px;
     width: 100%;
@@ -24,20 +27,19 @@ body {
     padding: 4px;
 }
 
+/* Schriftgröße für Überschriften */
 h1,
 h2 {
     font-size: 2.25rem;
-    margin-top:0px;
-    margin-bottom: 0px;
 }
 
-h2,
-div,
-p {
+/* Standardabstände für Überschriften, Div-Elemente und Absätze */
+h2, div, p {
   margin-top: 34px;
   margin-bottom: 34px;  
 }
 
+/* Button-Styling */
 button {
     width: 200px;
     font-size: 1.5rem;
@@ -53,6 +55,7 @@ button:hover {
     background-color: var(--hover-color);
 }
 
+/* Layout für den Auswahl- und Vergleichsbereich */
 .selection-area {
     display: flex;
     justify-content: space-around;
@@ -66,14 +69,17 @@ button:hover {
     clear: both; 
 }
 
+/* Spiegelung des Computer-Bildes für einen ansprechenden Effekt */
 #computer-choice-element {
     transform: scaleX(-1);
 }
 
+/* Allgemeines Styling für Bilder */
 img {
     width: calc(30%);
 }
 
+/* Cursor-Styling für klickbare Elemente */
 #rock-image-element,
 #paper-image-element,
 #scissors-image-element,
@@ -81,6 +87,7 @@ img {
     cursor: pointer;
 }
 
+/* Anfangszustand für Ergebnis- und Vergleichsbereich */
 #result-element,
 #compare-element{
     display: none;
